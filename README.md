@@ -79,7 +79,7 @@ To run this project, please follow the following instructions.
 * Clone the repository.
 
       $ git clone `https://github.com/Isaackmogaka/Final-project-phase-3-python.git`
-      $ cd Phase-3-Independent-Project
+      $ cd Phase-3-Final_project_Phase_3_CLI
       $ pipenv shell
       $ code .
       
