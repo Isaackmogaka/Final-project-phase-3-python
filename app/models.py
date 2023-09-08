@@ -1,3 +1,4 @@
+# Import necessary modules and classes from SQLAlchemy
 from sqlalchemy import create_engine, Column, Integer, String, Date, Float, ForeignKey
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
@@ -33,7 +34,7 @@ class Product(Base):
     orders = relationship('OrderDetail', back_populates='product',overlaps="orders")
     order_details = relationship('OrderDetail', back_populates='product',overlaps="orders")
   
-    # Establish a relationship with categories
+# Establish a relationship with categories
     category = relationship('Category', back_populates='products')
     order_details = relationship('OrderDetail', back_populates='product',overlaps="orders")
     orders = relationship('Order', back_populates='customer')
