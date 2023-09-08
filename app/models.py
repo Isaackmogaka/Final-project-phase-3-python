@@ -47,7 +47,7 @@ class Customer(Base):
     customer_name = Column(String)
     orders = relationship('Order', back_populates='customer')
 
-# Define the Orders table
+# Define the Order table
 class Order(Base):
     __tablename__ = 'orders'
 
